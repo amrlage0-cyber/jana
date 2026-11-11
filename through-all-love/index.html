@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Through All Love</title>
+<meta name="theme-color" content="#8f0f2e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Caveat:wght@500;700&family=Cairo:wght@400;600&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="locked">
+
+<div class="hearts" id="hearts" aria-hidden="true"></div>
+
+<!-- Password screen (front-end only, not real security) -->
+<section class="lock" id="lock" aria-label="Password screen">
+  <form class="lock__card" id="lockForm" autocomplete="off">
+    <p class="lock__spark" aria-hidden="true">✦ ♡ ✦</p>
+    <h1 class="lock__title">Through All Love</h1>
+    <p class="lock__sub">A little place made just for you, Jana.</p>
+    <label class="sr" for="pw">Password</label>
+    <input id="pw" type="password" inputmode="numeric" placeholder="• • • • • •" maxlength="12" required>
+    <button type="submit" class="btn">Unlock ♥</button>
+    <p class="lock__err" id="lockErr" role="alert" aria-live="polite"></p>
+  </form>
+</section>
+
+<main id="site" class="site" hidden>
+
+  <header class="hero">
+    <div class="hero__photos" id="heroPhotos"></div>
+    <div class="hero__text">
+      <p class="hand hero__date">11 / 11</p>
+      <h1 class="hero__title">Through All Love</h1>
+      <p class="hero__name">Jana</p>
+      <p class="hand hero__sub">a scrapbook of everything I never say out loud</p>
+      <p class="hero__arrow" aria-hidden="true">↓</p>
+    </div>
+  </header>
+
+  <section class="scatter" id="scatterA" aria-label="Love notes and memories"></section>
+
+  <section class="river" aria-label="Memories sliding by">
+    <p class="hand river__label reveal">memories, never standing still</p>
+    <div class="slider" id="sliderA" aria-hidden="true"></div>
+    <div class="slider slider--b" id="sliderB" aria-hidden="true"></div>
+  </section>
+
+  <section class="scatter scatter--b" id="scatterB" aria-label="More love notes"></section>
+
+  <section class="scatter scatter--c" id="scatterC" aria-label="Little details"></section>
+
+  <footer class="final" id="final">
+    <div class="final__photos" id="finalPhotos"></div>
+    <div class="final__notes" id="finalNotes"></div>
+    <h2 class="final__title reveal">Through All Love</h2>
+    <p class="final__msg reveal">Jana, you're one of my favorite parts of this life. ❤️</p>
+  </footer>
+
+</main>
+
+<script src="js/main.js"></script>
+</body>
+</html>
